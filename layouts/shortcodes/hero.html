@@ -7,14 +7,13 @@
 {{ $primary_button_url := .Get "primary_button_url" }}
 {{ $secondary_button_text := .Get "secondary_button_text" }}
 {{ $secondary_button_url := .Get "secondary_button_url" }}
-{{ $hero_image := .Get "hero_image" }}
 {{ $background_image := .Get "background_image" }}
 {{ $gradient_from := .Get "gradient-from" }}
 {{ $gradient_to := .Get "gradient-to" | default "#0f172a" }}
 
 {{ $hero_background := "background: radial-gradient(circle at top, #38bdf833, #0f172a 55%);" }}
 {{ if $gradient_from }}
-  {{ $hero_background = printf "background: radial-gradient(circle at top, %s, %s 25%%);" $gradient_from $gradient_to }}
+  {{ $hero_background = printf "background: radial-gradient(circle at top, %s, %s 55%%);" $gradient_from $gradient_to }}
 {{ end }}
 
 <section class="c360-hero relative overflow-hidden text-white" style="{{ $hero_background }}">
@@ -53,19 +52,80 @@
                     </a>
                     {{ end }}
                 </div>
+
                 {{ if $supporting_text }}
-                <p class="hidden md:block text-sm c360-muted-text">
+                <p class="hidden lg:block text-sm c360-muted-text">
                     {{ $supporting_text | safeHTML }}
                 </p>
                 {{ end }}
             </div>
 
             <div class="relative">
-                {{ if $hero_image }}
-                <div class="relative z-10">
-                    <img src="{{ $hero_image | relURL }}" alt="Hero Image" class="rounded-xl shadow-2xl border border-white/10">
+                <div class="mock-dashboard hero-shadow p-4 md:p-6 relative z-10">
+                    <div class="flex items-center justify-between mb-4">
+                        <h6 class="mb-0 font-semibold text-sm md:text-base">Cinturon360 overview</h6>
+                        <span class="pill">AUD</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="border rounded-2xl p-4">
+                            <p class="text-muted mb-1 text-[0.7rem]">Month to date</p>
+                            <h4 class="font-bold mb-0 text-2xl">$412,580</h4>
+                            <p class="mb-0 text-[0.7rem] text-emerald-600">↗ 12.6% vs last month</p>
+                        </div>
+
+                        <div class="border rounded-2xl p-4">
+                            <p class="text-muted mb-1 text-[0.7rem]">Policy compliance</p>
+                            <h4 class="font-bold mb-0 text-2xl">94.2%</h4>
+                            <p class="text-muted mb-0 text-[0.7rem]">32 soft exceptions</p>
+                        </div>
+
+                        <div class="sm:col-span-2 border rounded-2xl p-4">
+                            <p class="text-muted mb-3 text-[0.7rem]">Latest trips</p>
+
+                            <div class="flex items-center justify-between gap-4 mb-3">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <div class="route-pill">SYD → AKL</div>
+                                    <div class="min-w-0">
+                                        <div class="text-[0.75rem]">Ops, APAC</div>
+                                        <div class="text-muted text-[0.65rem]">TMC source</div>
+                                    </div>
+                                </div>
+                                <span class="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-[0.6rem] font-semibold text-emerald-700 whitespace-nowrap">
+                                    Within policy
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mb-3">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <div class="route-pill">MEL → SIN</div>
+                                    <div class="min-w-0">
+                                        <div class="text-[0.75rem]">Sales, ASEAN</div>
+                                        <div class="text-muted text-[0.65rem]">OTA source</div>
+                                    </div>
+                                </div>
+                                <span class="badge-risk inline-flex items-center rounded-full px-2 py-1 whitespace-nowrap">
+                                    Exception: fare above cap
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-3 min-w-0">
+                                    <div class="route-pill">SYD → PER</div>
+                                    <div class="min-w-0">
+                                        <div class="text-[0.75rem]">Govt, ANZ</div>
+                                        <div class="text-muted text-[0.65rem]">NDC source</div>
+                                    </div>
+                                </div>
+                                <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-100 px-2 py-1 text-[0.6rem] font-semibold text-slate-700 whitespace-nowrap">
+                                    Waiting approval
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-muted mt-4 mb-0 text-[0.65rem]">Cinturon360.com • Real-time policy and spend.</p>
                 </div>
-                {{ end }}
 
                 <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full blur-3xl opacity-40 bg-sky-300"></div>
                 <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full blur-3xl opacity-20 bg-orange-300"></div>

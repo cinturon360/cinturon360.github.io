@@ -36,8 +36,8 @@ title2b = "360"
 enable = true
 title = "Ready to Build Your SaaS Website?"
 description = "Join companies already using our theme to create beautiful, high-performance websites."
-gradient_from = "#2563eb"                                                                              # Indigo-600
-gradient_to = "#7c3aed"                                                                                # Purple-600
+gradient_from = "#38bdf833"
+gradient_to = "#0f172a"
 gradient_angle = 30
 [params.cta.primary_button]
 text = "Get Started Free"
