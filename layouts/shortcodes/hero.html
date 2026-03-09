@@ -1,0 +1,64 @@
+{{ $headline := .Get "headline" }}
+{{ $headline2 := .Get "headline2" }}
+{{ $headline3 := .Get "headline3" }}
+{{ $sub_headline := .Get "sub_headline" }}
+{{ $primary_button_text := .Get "primary_button_text" }}
+{{ $primary_button_url := .Get "primary_button_url" }}
+{{ $secondary_button_text := .Get "secondary_button_text" }}
+{{ $secondary_button_url := .Get "secondary_button_url" }}
+{{ $hero_image := .Get "hero_image" }}
+{{ $background_image := .Get "background_image" }}
+{{ $gradient_from := .Get "gradient-from" }}
+{{ $gradient_to := .Get "gradient-to" | default "#0f172a" }}
+
+<section class="relative overflow-hidden text-white" style="background: radial-gradient(circle at top, {{ if $gradient_from }}{{ $gradient_from }}, {{ $gradient_to }} 55%{{ else }}#38bdf833, #0f172a 55%{{ end }});">
+  {{ if $background_image }}
+    <div class="absolute inset-0">
+      <img src="{{ $background_image | relURL }}" alt="Background" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-slate-950/20"></div>
+  {{ end }}
+
+  <div class="container relative z-10 pt-16 pb-20 md:pt-24 md:pb-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+          {{ if $headline2 }}
+            {{ $headline | safeHTML }}<span class="text-sky-400">{{ $headline2 | safeHTML }}</span><span class="text-white">{{ $headline3 | safeHTML }}</span>
+          {{ else }}
+            {{ $headline | safeHTML }}
+          {{ end }}
+        </h1>
+
+        <p class="text-xl text-white">
+          {{ $sub_headline | safeHTML }}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          {{ if and $primary_button_text $primary_button_url }}
+            <a href="{{ $primary_button_url }}" class="btn-primary text-center">
+              {{ $primary_button_text }}
+            </a>
+          {{ end }}
+
+          {{ if and $secondary_button_text $secondary_button_url }}
+            <a href="{{ $secondary_button_url }}" class="btn-outline text-center">
+              {{ $secondary_button_text }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="relative">
+        {{ if $hero_image }}
+          <div class="relative z-10">
+            <img src="{{ $hero_image | relURL }}" alt="Hero Image" class="rounded-xl shadow-2xl border border-white/10">
+          </div>
+        {{ end }}
+
+        <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full blur-3xl opacity-40 bg-sky-300"></div>
+        <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full blur-3xl opacity-20 bg-orange-300"></div>
+      </div>
+    </div>
+  </div>
+</section>

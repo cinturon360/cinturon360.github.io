@@ -3371,6 +3371,9 @@ input:where([type='file']):focus {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
+.border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
 .bg-blue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
@@ -3403,6 +3406,10 @@ input:where([type='file']):focus {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity, 1));
 }
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity, 1));
+}
 .bg-primary-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(221 227 249 / var(--tw-bg-opacity, 1));
@@ -3422,6 +3429,13 @@ input:where([type='file']):focus {
 .bg-secondary-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
+}
+.bg-sky-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 211 252 / var(--tw-bg-opacity, 1));
+}
+.bg-slate-950\/20 {
+  background-color: rgb(2 6 23 / 0.2);
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -3744,6 +3758,10 @@ input:where([type='file']):focus {
   --tw-text-opacity: 1;
   color: rgb(66 90 214 / var(--tw-text-opacity, 1));
 }
+.text-sky-400 {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity, 1));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -3753,6 +3771,12 @@ input:where([type='file']):focus {
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-20 {
+  opacity: 0.2;
+}
+.opacity-40 {
+  opacity: 0.4;
 }
 .opacity-50 {
   opacity: 0.5;
