@@ -27,8 +27,10 @@ testimonials:
 ---
 
 {{< hero 
-    headline="Build Your SaaS Website"
-    sub_headline="Create stunning, responsive websites that load instantly. Built with Hugo and TailwindCSS for maximum performance and flexibility."
+    headline="Wrap your travel in "
+    headline2="360° visibility"
+    headline3="."
+    sub_headline="Cinturon360 connects to where your people already book, applies policy and approvals, and delivers finance-grade reporting for corporate, government, education, and travel partners."
     primary_button_text="Book a demo"
     primary_button_url="https://avanoa.co/cinturon360#book-demo"
     secondary_button_text="View Docs"
