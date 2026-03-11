@@ -33,7 +33,7 @@ testimonials:
     sub_headline="Cinturon360 connects to where your people already book, applies policy and approvals, and delivers finance-grade reporting for corporate, government, education, and travel partners."
     supporting_text="Works with GDS/NDC, direct suppliers, and travel agents. No rip-and-replace."
     primary_button_text="Book a demo"
-    primary_button_url="https://avanoa.co/cinturon360#book-demo"
+    primary_button_url="/contact"
     secondary_button_text="View Docs"
     secondary_button_url="https://docs.cinturon360.com/"
     gradient-from="#38bdf833"
@@ -53,7 +53,7 @@ testimonials:
     badge="Governance"
     badgeColor="#0f172a"
     buttonText="Learn More"
-    buttonLink="/platform/governance/"
+    buttonLink="/platform/policy-approvals/"
     features="Pre-trip approvals,Cost-centre routing,Out-of-policy handling,Full audit trail"
     imagePosition="right"
 >}}
@@ -65,7 +65,7 @@ testimonials:
     badgeColor="#f97316"
     image="/images/feature-2.svg"
     buttonText="Explore Integrations"
-    buttonLink="/integrations/"
+    buttonLink="/platform/integrations/"
     features="GDS and NDC support,TMC connectors,Direct supplier flows,Expense and ERP handoff"
     imagePosition="left"
 >}}
@@ -77,7 +77,7 @@ testimonials:
     badgeColor="#0f172a"
     image="/images/feature-3.svg"
     buttonText="See Reporting"
-    buttonLink="/platform/reporting/"
+    buttonLink="/platform/reporting-visibility/"
     features="Spend visibility,Compliance reporting,Exception monitoring,Export-ready data"
     imagePosition="right"
 >}}

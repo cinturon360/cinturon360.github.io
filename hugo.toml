@@ -228,16 +228,16 @@ weight = 4
 
 # Footer Column 1 Menu
 [[menu.footer_column_1]]
-name = "Performance"
-url = "/platform/performance/"
+name = "Policy & Approvals"
+url = "/platform/policy-approvals/"
 weight = 1
 [[menu.footer_column_1]]
-name = "Design System"
-url = "/platform/design-system/"
+name = "Integrations"
+url = "/platform/integrations/"
 weight = 2
 [[menu.footer_column_1]]
-name = "Developer Experience"
-url = "/platform/developer-experience/"
+name = "TMC Operations"
+url = "/platform/tmc-operations/"
 weight = 3
 
 # Footer Column 2 Menu
@@ -246,8 +246,8 @@ name = "Blog"
 url = "/blog/"
 weight = 1
 [[menu.footer_column_2]]
-name = "About Us"
-url = "/about-us/"
+name = "About"
+url = "/about/"
 weight = 2
 [[menu.footer_column_2]]
 name = "Careers"

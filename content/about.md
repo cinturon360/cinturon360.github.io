@@ -84,7 +84,14 @@ description: "Learn what Cinturon360 is, who it is built for, and how RePass Clo
 
 {{< section-container class="py-20" >}}
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">Built by RePass Cloud</h2>
+        <div class="flex items-center justify-center gap-4 mb-3">
+            <span class="text-3xl font-bold">Built by RePass Cloud</span>
+            <img
+                src="https://repasscloud.com/images/repass-cloud-logo.png"
+                alt="RePass Cloud logo"
+                style="height: 72px; width: auto;"
+            >
+        </div>
         <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-8 md:p-10">
             <div class="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8 items-center">
                 <div class="flex justify-center md:justify-start">
