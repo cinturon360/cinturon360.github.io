@@ -26,7 +26,7 @@ description = ""
 author = "RePass Cloud"
 logo = "/images/logo.svg"
 # Google Analytics ID (e.g., "G-XXXXXXXXXX")
-# googleAnalytics = "G-XXXXXXXXXX"
+googleAnalytics = "G-12XHTCYYK3"
 title2 = "Cinturon360.com"
 title2a = "Cinturon"
 title2b = "360"
